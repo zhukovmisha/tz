@@ -1,0 +1,14 @@
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: Disallow SSH password authentication
+      lineinfile:
+        dest: /etc/ssh/sshd_config
+        regexp: "^PasswordAuthentication"
+        line: "PasswordAuthentication no"
+        state: present
+        validate: "sshd -t -f %s"
+    - name: Stop and Start ssh
+      service:
+        name: ssh
+        state: restarted

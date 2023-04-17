@@ -1,0 +1,6 @@
+projectKey=training:security
+serverUrl=http://192.168.254.210:9000
+serverVersion=10.0.0.68432
+dashboardUrl=http://192.168.254.210:9000/dashboard?id=training%3Asecurity
+ceTaskId=AYeJakHnqQ74Tl2nFwUF
+ceTaskUrl=http://192.168.254.210:9000/api/ce/task?id=AYeJakHnqQ74Tl2nFwUF
